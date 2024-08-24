@@ -1,7 +1,6 @@
 package org.example.lesson2.homeWork2;
 
 import java.lang.reflect.Method;
-import java.util.Arrays;
 
 /**
  * Используя Reflection API, напишите программу, которая выводит на экран все методы класса String.
