@@ -10,6 +10,11 @@ public class Main {
 
     public static void main(String[] args) {
 
+        stringClassMethods();
+    }
+
+    static void stringClassMethods(){
+
         Class<String> clazz = String.class;
         Method[] methods = clazz.getDeclaredMethods();
 
