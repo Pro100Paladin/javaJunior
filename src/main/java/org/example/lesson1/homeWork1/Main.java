@@ -6,6 +6,7 @@ import java.util.stream.IntStream;
 
 import static java.lang.System.out;
 
+
 /**
  * Напишите программу, которая использует Stream API для обработки списка чисел.
  * Программа должна вывести на экран среднее значение всех четных чисел в списке.
@@ -19,7 +20,7 @@ public class Main {
         int[] numbers = IntStream.generate(() -> new Random().nextInt(100)).limit(10).toArray();
         Arrays.stream(numbers).forEach(out::println);
 
-        Arrays.stream(numbers).filter(i -> i % 2 == 0).average().stream().forEach(out::print);
+        Arrays.stream(numbers).filter(i -> i % 2 == 0).average().stream().forEach(out::println);
     }
 }
 
