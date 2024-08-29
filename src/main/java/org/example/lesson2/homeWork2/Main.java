@@ -13,7 +13,7 @@ public class Main {
         stringClassMethods();
     }
 
-    static void stringClassMethods(){
+    static void stringClassMethods() {
 
         Class<String> clazz = String.class;
         Method[] methods = clazz.getDeclaredMethods();
@@ -21,7 +21,6 @@ public class Main {
         int num = 0;
         for (Method method : methods) {
             num++;
-
             System.out.println("метод под № " + num + ": " + method.getName());
         }
     }
