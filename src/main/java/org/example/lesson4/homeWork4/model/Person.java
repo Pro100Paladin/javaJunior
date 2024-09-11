@@ -4,6 +4,7 @@ package org.example.lesson4.homeWork4.model;
 import jakarta.persistence.*;
 
 import java.util.Random;
+
 @Entity
 @Table(name = "persons")
 public class Person {
@@ -13,7 +14,9 @@ public class Person {
     private String name;
     private int age;
 
-    public Person(){}
+    public Person() {
+    }
+
     public Person(int id, String name, int age) {
         this.id = id;
         this.name = name;

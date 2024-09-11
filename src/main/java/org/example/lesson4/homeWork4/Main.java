@@ -14,8 +14,8 @@ import java.util.Collections;
 import java.util.List;
 
 /**
-Задание: Настройте связь между вашим приложением и базой данных MySQL с использованием Hibernate.
-Создайте несколько объектов Person и сохраните их в базу данных.
+ * Задание: Настройте связь между вашим приложением и базой данных MySQL с использованием Hibernate.
+ * Создайте несколько объектов Person и сохраните их в базу данных.
  */
 
 
@@ -24,7 +24,7 @@ public class Main {
 //        String url = "jdbc:mysql://localhost:3306/";
 //        String user = "root";
 //        String password = "krv9603822416";
-        try(SessionFactory sessionFactory = new Configuration()
+        try (SessionFactory sessionFactory = new Configuration()
                 .configure("hibernate.cfg.xml")
                 .addAnnotatedClass(Person.class)
                 .buildSessionFactory()) {
@@ -53,8 +53,7 @@ public class Main {
 //            Person person3 = new Person("Daria", 39);
 //            Person person4 = new Person("Vladimir", 72);
             session.getTransaction().commit();
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
 
