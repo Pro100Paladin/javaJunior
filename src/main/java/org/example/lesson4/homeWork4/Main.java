@@ -22,9 +22,11 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
+
 //        String url = "jdbc:mysql://localhost:3306/";
 //        String user = "root";
-//        String password = "krv9603822416";
+//        String password = "password";
+
         try (SessionFactory sessionFactory = new Configuration()
                 .configure("hibernate.cfg.xml")
                 .addAnnotatedClass(Person.class)
